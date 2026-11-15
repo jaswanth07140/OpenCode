@@ -45,3 +45,8 @@ Persisted via OpenCode `instructions` (config key `instructions`). Loaded into e
 
 ## Credentials / security notes
 - A GitHub `mcp_token` URL param was pasted (eyJ… token, decodable JSON with pid/sid/ax/ts/exp) from tashfeenahmed/freellmapi. It matched nothing in the repo and /freellmapi.co/mcp 404s; treated as burned; never written to disk. Freellmapi unified key goes ONLY through /home/jaswanth072012/.config/opencode/freellmapi.key (no trailing newline).
+
+## Repos consumed this session (research + integration)
+1. tashfeenahmed/freellmapi — installed locally; OpenCode provider wired; `?mcp_token=` deemed bogus/burned; missing provider keys remains the only blocker.
+2. msitarzewski/agency-agents — 87 agents installed; ECC name-collision fixed.
+3. garrytan/gstack — assessed, markdown-only path chosen, not executed.
