@@ -49,4 +49,5 @@ Persisted via OpenCode `instructions` (config key `instructions`). Loaded into e
 ## Repos consumed this session (research + integration)
 1. github.com/tashfeenahmed/freellmapi — with ?mcp_token=... — installed locally; OpenCode provider wired; token deemed bogus/burned; missing provider keys remains the only blocker.
 2. github.com/msitarzewski/agency-agents — 87 agents installed; ECC name-collision fixed.
-3. github.com/garrytan/gstack — assessed, markdown-only path chosen, not executed.
+3. github.com/garrytan/gstack — assessed, markdown-only path chosen, not executed (CEO/design/review/QA commands; OpenCode host experimental; requires bun+git+browser; ~300MB+; markdown-only chosen).
+4. github.com/affaan-m/ECC — installed as npm package ecc-universal 2.2.3 at ~/.config/opencode (no clone; files dated Nov 6–12, npm latest is also 2.2.3); source of agents, instructions, skills, plugins.
