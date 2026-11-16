@@ -54,3 +54,11 @@ Persisted via OpenCode `instructions` (config key `instructions`). Loaded into e
 2. github.com/msitarzewski/agency-agents — 87 agents installed; ECC name-collision fixed.
 3. github.com/garrytan/gstack — assessed, markdown-only path chosen, not executed (CEO/design/review/QA commands; OpenCode host experimental; requires bun+git+browser; ~300MB+; markdown-only chosen).
 4. github.com/affaan-m/ECC — installed as npm package ecc-universal 2.2.3 at ~/.config/opencode (no clone; files dated Nov 6–12, npm latest is also 2.2.3); source of agents, instructions, skills, plugins.
+
+## GitHub (2026-11-15, now working)
+- Account: jaswanth07140. Auth: fine-grained PAT at ~/.config/opencode/gh.token (mode 600, no trailing newline). `gh` CLI NOT installed; use the REST API via curl and push with `git -c http.extraheader="Authorization: Basic $(printf 'x-access-token:%s' "$T" | base64 -w0)" push` so the token never lands in .git/config.
+- Repos live: jaswanth07140/OpenCode (this handoff + CEO-PLAN.md), jaswanth07140/zero-ai (portable AI brain: 48 domains/12 categories, brain.py init|stats|build|lint|grow, ingest.py, run_eval.py, 2 Actions workflows), jaswanth07140/Zero (website: zero-site/ partial 105 files + versions/5.0.6/zero-site/ complete 216 files + zero-extension + Alexa bundles; 334 files total).
+- jaswanth07140/Code still exists and is EMPTY (README only, 6 bytes) — unused.
+- Local clones: ~/OpenCode, ~/zero-ai, ~/zero-repo (clone of Zero).
+- NEVER pushed and must stay off-repo: ~/zero-ops/backups/live-20261115-132706/htdocs/config.php holds a LIVE provider key, plus users.dat.php / messages.dat.php user data. zero-repo/.gitignore excludes config.php, *.dat.php, backups/, data dirs.
+- Lesson: ~/zero-ai files were written once and vanished (dirs remained, files gone). Fix pattern: git init + commit + push immediately after creating files.
