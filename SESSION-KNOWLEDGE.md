@@ -82,3 +82,10 @@ Persisted via OpenCode `instructions` (config key `instructions`). Loaded into e
 - Decide whether to disable more leaking model rows (gemma-4-31b-it on requesty/google) given free-tier flake.
 - Consider curated router profile (auto_include_new_models off) for the brain.
 - Deployment of opencode-ui patch blocked: ~/zero-ops/patches/opencode-ui.html unverified.
+
+## Zero-AI state (2026-11-16, continued)
+- Brain now at 73 sourced facts, 18,582 chars (~4,800 tokens), budget 24k OK, accuracy 100/100, lint clean.
+- Added 2026-11-16 routing fact: openrouter key scoped to [dots-3-note-preview, cohere/north-mini-code, nemotron-3.5-super-vl]; nemotron-3.5-lightning + gemma-4-31b-it rows disabled after scratchpad leaks.
+- Zero-AI repos: zero-ai -> github.com/jaswanth07140/zero-ai (latest: leaker-records commit), Code -> github.com/jaswanth07140/Code (inv + 8 keys), OpenCode -> github.com/jaswanth07140/OpenCode (memory).
+- OpenRouter key (id3) scoped away from nvidia/nemotron-3.5-lightning:free and gemma-4-31b-it:free (rows disabled across platforms where applicable).
+- Pinned-model eval gemini-3.8-flash via --brain in background (restarted once mid-run, SIGTERM'd, now relaunched); awaiting 11/11 baseline.
